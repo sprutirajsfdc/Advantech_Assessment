@@ -1,0 +1,15 @@
+.title{
+	font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.slds-m-around_medium{
+font-family: cursive;
+}
+
+.footer {
+	background-color: cornsilk;
+	padding-left: 20px;
+}

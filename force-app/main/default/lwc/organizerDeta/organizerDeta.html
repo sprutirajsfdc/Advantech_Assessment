@@ -1,0 +1,36 @@
+<template>
+    <div class="main">
+        <lightning-card class="title">
+            <div class="slds-grid">
+                <div class="slds-col">
+                    <img src={background} style="height: 27px;padding-left: 10px;" alt="Background Image" />
+                </div>
+                <div class="slds-col">
+                    <h1 slot="title" style="padding-right: 219px;">Organizer Contacts</h1>
+                </div>
+            </div>
+            <div class="slds-m-around_medium">
+                <template for:each={contacts} for:item="contact">
+                    <p key={contact.Id}>
+                        <strong>Name:</strong> {contact.Name} <br />
+                        <strong>Phone:</strong> {contact.Phone} <br />
+                        <strong>Email:</strong> {contact.Email} <br />
+                        <strong>Title:</strong> {contact.Title} <br />
+                        <strong>Department:</strong> {contact.Department}
+                    </p>
+                </template>
+            </div>
+            <div class="footer">
+               <a href="https://www.youtube.com/channel/UCZpIGOMvo3Qh6QJhTDK8Lzw" target="_blank">
+                    <img src={youtube} style="height: 30px;" alt="YouTube Channel" title="SFDC clud play"/>
+                 </a>
+                  <a href="https://sprutiraj-dev-ed.my.site.com/blog" target="_blank">
+                    <img src={logopic} style="height: 30px;" alt="Blog Channel" title="Personal Blog"/>
+                 </a>
+                 <a href="https://www.salesforce.com/trailblazer/spanda193" target="_blank">
+                    <img src={trailhead} style="height: 30px;" alt="Blog Channel" title="Trailhead"/>
+                 </a>
+            </div>
+        </lightning-card>
+    </div>
+</template>

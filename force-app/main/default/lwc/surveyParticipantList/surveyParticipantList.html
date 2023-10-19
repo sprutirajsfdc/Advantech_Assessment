@@ -1,0 +1,16 @@
+<template>
+    
+ <div style="height: 300px;">
+     <h1 class="title fade-in">List Of Participant Completed Survey</h1>
+<template if:true={ContactList}>
+    
+     <lightning-datatable
+             key-field="id"
+             data={ContactList}
+             hide-checkbox-column="true"
+             show-row-number-column
+             columns={columns}>
+     </lightning-datatable>
+</template>
+</div>
+</template>

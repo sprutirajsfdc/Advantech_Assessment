@@ -1,0 +1,28 @@
+.title{
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+	font-size: 20px;
+	text-align: center;
+	background-color: antiquewhite;
+}
+ .hideActionButton .slds-dropdown-trigger.slds-dropdown-trigger_click {
+   display: none;
+}
+.fade-in{
+	animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+/* .backgroundImg{
+	 height: 800px;
+    background-position: center;
+    background-size: cover;
+   width: 100%;	
+} */

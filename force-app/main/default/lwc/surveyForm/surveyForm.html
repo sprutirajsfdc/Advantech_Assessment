@@ -1,0 +1,21 @@
+<template>
+
+ <h2 class="heading">Survey Form</h2>
+        <lightning-card title="Contact Name">
+  <div class="slds-m-around_medium">
+                <p>Hello !! {contactName}</p>
+            </div>
+              <div class="radioc">
+             <lightning-radio-group name="radioGroup"
+                          label="Please indicate your Dietary Preference: Vegetarian or Non-vegetarian."
+                          options={options}
+                          value={selectedOption}
+                          onchange={handleOptionChange}
+                          type="radio"></lightning-radio-group>
+            </div>
+            <div class="button">
+                    <lightning-button label="Submit" variant="brand" onclick={handleSubmit} ></lightning-button>
+            </div>
+        </lightning-card>
+
+</template>
